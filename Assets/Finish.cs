@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Finish : MonoBehaviour
 {
  private void OnTriggerEnter(Collider other){
-    if(other.gameObject.name =="Player"){
+    if(other.gameObject.name =="Boy"){
         //Se incarca urmatorul nivel
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }

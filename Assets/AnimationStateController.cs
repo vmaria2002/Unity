@@ -23,7 +23,12 @@ public class AnimationStateController : MonoBehaviour
     //Cand NU apasam pe "W" scade viteza
     void Update()
     {
-        bool forwardPressed = Input.GetKey("w");
+        bool forwardPressed ;
+        if(Input.GetKey("left")||Input.GetKey("right")||Input.GetKey("up")||Input.GetKey("downdown")){
+            forwardPressed=true;
+        }else{
+            forwardPressed=false;   
+        }
         bool runPressed = Input.GetKey("s");
         //daca se apasa "w", se va creste viteza
         if(forwardPressed && velocity < 1){
