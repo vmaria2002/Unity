@@ -359,6 +359,7 @@
 "Assets/ItemColector.cs"
 "Assets/Movment.cs"
 "Assets/PlayerLife.cs"
+"Assets/Rot1.cs"
 "Assets/Rotate.cs"
 "Assets/StartMenu.cs"
 "Assets/StickyPlatform.cs"

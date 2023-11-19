@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Rotate : MonoBehaviour
 {
-    //De complrtat in Unity
-    [SerializeField] float speedX;
-    [SerializeField] float speedY;
-    [SerializeField] float speedZ;    
-    
-    void Update()
-    {
-     //Rotire pe X: 360 gr
-     //Time.deltaTime timpul pt frame
-     transform.Rotate(360 *speedX*Time.deltaTime, 360 *speedY*Time.deltaTime, 360 *speedZ*Time.deltaTime);    
-    }
+
+  float rotSpeed = 20;  
+
+  void OnMouseDrag(){
+    float rotX = Input.GetAxis("Mouse X")*rotSpeed*Mathf.Deg2Rad;
+    float rotY = Input.GetAxis("Mouse Y")*rotSpeed*Mathf.Deg2Rad;
+    transform.RotateAround(Vector3.up, -rotX);
+    transform.RotateAround(Vector3.right, rotY);
+  
+  }
+
 }

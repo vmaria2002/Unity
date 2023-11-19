@@ -6,7 +6,7 @@ using TMPro;
 public class ItemColector : MonoBehaviour
 {
   //numarul de steaguri colectate:
-   int flags = 1;
+   int flags = 0;
   [SerializeField] TMP_Text flagsTest;
   //Sunete la colectare steaguri:
     [SerializeField] AudioSource collectionSound;
