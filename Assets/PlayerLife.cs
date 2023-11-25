@@ -19,7 +19,7 @@ public class PlayerLife : MonoBehaviour
     }
 
    private void OnCollisionEnter(Collision colision){
-    if(colision.gameObject.CompareTag("Enamy Body")){
+    if(colision.gameObject.CompareTag("Enamy")){
     //Player: invisible
     //nu mai este afectat de coliziuni
     //GetComponent<Rigidbody>().isKinematic = true;
